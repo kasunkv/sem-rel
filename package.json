@@ -1,0 +1,35 @@
+{
+  "name": "sem-rel",
+  "version": "0.0.0-development",
+  "description": "Sample project to test semantic releases",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git cz",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kasunkv/sem-rel.git"
+  },
+  "keywords": [
+    "semantic",
+    "release"
+  ],
+  "author": "Kasun Kodagoda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kasunkv/sem-rel/issues"
+  },
+  "homepage": "https://github.com/kasunkv/sem-rel#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "semantic-release": "^7.0.2"
+  }
+}
